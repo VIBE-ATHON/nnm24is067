@@ -1,0 +1,81 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="skill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)" rx="12"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  </pattern>
+  <rect width="400" height="300" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Main Skill Card -->
+  <rect x="50" y="40" width="300" height="180" fill="url(#card-gradient)" rx="16" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Profile Avatar -->
+  <circle cx="90" cy="80" r="20" fill="url(#skill-gradient)"/>
+  <text x="90" y="87" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">JS</text>
+  
+  <!-- Skill Title -->
+  <text x="125" y="75" fill="#1e293b" font-family="Arial" font-size="16" font-weight="bold">React Development</text>
+  <text x="125" y="95" fill="#64748b" font-family="Arial" font-size="12">Advanced Level</text>
+  
+  <!-- Skill Tags -->
+  <rect x="125" y="105" width="50" height="20" fill="#dbeafe" rx="10"/>
+  <text x="150" y="117" text-anchor="middle" fill="#1d4ed8" font-family="Arial" font-size="10">React</text>
+  
+  <rect x="185" y="105" width="45" height="20" fill="#dcfce7" rx="10"/>
+  <text x="207.5" y="117" text-anchor="middle" fill="#166534" font-family="Arial" font-size="10">Node.js</text>
+  
+  <rect x="240" y="105" width="60" height="20" fill="#fef3c7" rx="10"/>
+  <text x="270" y="117" text-anchor="middle" fill="#92400e" font-family="Arial" font-size="10">TypeScript</text>
+  
+  <!-- Progress Bar -->
+  <rect x="125" y="140" width="200" height="8" fill="#e5e7eb" rx="4"/>
+  <rect x="125" y="140" width="160" height="8" fill="url(#skill-gradient)" rx="4"/>
+  <text x="125" y="165" fill="#64748b" font-family="Arial" font-size="11">80% Proficiency</text>
+  
+  <!-- Connection Icon -->
+  <circle cx="320" cy="80" r="15" fill="#10b981" opacity="0.2"/>
+  <path d="M315 75 L320 80 L325 75" stroke="#10b981" stroke-width="2" fill="none"/>
+  <path d="M315 85 L320 80 L325 85" stroke="#10b981" stroke-width="2" fill="none"/>
+  
+  <!-- Floating Skill Icons -->
+  <circle cx="80" cy="250" r="25" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="257" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="12" font-weight="bold">HTML</text>
+  
+  <circle cx="150" cy="260" r="25" fill="rgba(34, 197, 94, 0.1)" stroke="#22c55e" stroke-width="2"/>
+  <text x="150" y="267" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="12" font-weight="bold">CSS</text>
+  
+  <circle cx="220" cy="250" r="25" fill="rgba(168, 85, 247, 0.1)" stroke="#a855f7" stroke-width="2"/>
+  <text x="220" y="257" text-anchor="middle" fill="#a855f7" font-family="Arial" font-size="11" font-weight="bold">Python</text>
+  
+  <circle cx="290" cy="260" r="25" fill="rgba(249, 115, 22, 0.1)" stroke="#f97316" stroke-width="2"/>
+  <text x="290" y="267" text-anchor="middle" fill="#f97316" font-family="Arial" font-size="12" font-weight="bold">Java</text>
+  
+  <!-- Connection Lines -->
+  <path d="M105 250 Q130 230 155 260" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M175 260 Q200 240 245 250" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M245 250 Q270 240 315 260" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- Sparkle Effects -->
+  <g opacity="0.6">
+    <path d="M360 60 L362 65 L367 63 L362 68 L360 73 L358 68 L353 63 L358 65 Z" fill="#fbbf24"/>
+    <path d="M40 180 L42 185 L47 183 L42 188 L40 193 L38 188 L33 183 L38 185 Z" fill="#06d6a0"/>
+    <path d="M370 200 L372 205 L377 203 L372 208 L370 213 L368 208 L363 203 L368 205 Z" fill="#f72585"/>
+  </g>
+</svg>

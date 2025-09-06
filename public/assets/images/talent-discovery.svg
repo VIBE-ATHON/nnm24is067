@@ -1,0 +1,130 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="person-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg-grad)" rx="12"/>
+  
+  <!-- Network Grid -->
+  <g opacity="0.2">
+    <line x1="0" y1="50" x2="400" y2="50" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="100" x2="400" y2="100" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="200" x2="400" y2="200" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="250" x2="400" y2="250" stroke="white" stroke-width="1"/>
+    
+    <line x1="50" y1="0" x2="50" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="250" y1="0" x2="250" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="350" y1="0" x2="350" y2="300" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Central Hub -->
+  <circle cx="200" cy="150" r="40" fill="url(#glow)"/>
+  <circle cx="200" cy="150" r="30" fill="rgba(255,255,255,0.9)" stroke="url(#person-grad)" stroke-width="3"/>
+  <circle cx="200" cy="140" r="8" fill="url(#person-grad)"/>
+  <path d="M185 155 Q200 165 215 155 Q210 175 200 175 Q190 175 185 155" fill="url(#person-grad)"/>
+  
+  <!-- Talent Nodes -->
+  <!-- Student 1 -->
+  <circle cx="80" cy="80" r="20" fill="rgba(34, 197, 94, 0.2)" stroke="#22c55e" stroke-width="2"/>
+  <circle cx="80" cy="75" r="5" fill="#22c55e"/>
+  <path d="M70 85 Q80 90 90 85 Q87 95 80 95 Q73 95 70 85" fill="#22c55e"/>
+  <text x="80" y="110" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Web Dev</text>
+  
+  <!-- Student 2 -->
+  <circle cx="320" cy="80" r="20" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="320" cy="75" r="5" fill="#3b82f6"/>
+  <path d="M310 85 Q320 90 330 85 Q327 95 320 95 Q313 95 310 85" fill="#3b82f6"/>
+  <text x="320" y="110" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">AI/ML</text>
+  
+  <!-- Student 3 -->
+  <circle cx="80" cy="220" r="20" fill="rgba(168, 85, 247, 0.2)" stroke="#a855f7" stroke-width="2"/>
+  <circle cx="80" cy="215" r="5" fill="#a855f7"/>
+  <path d="M70 225 Q80 230 90 225 Q87 235 80 235 Q73 235 70 225" fill="#a855f7"/>
+  <text x="80" y="250" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Design</text>
+  
+  <!-- Student 4 -->
+  <circle cx="320" cy="220" r="20" fill="rgba(249, 115, 22, 0.2)" stroke="#f97316" stroke-width="2"/>
+  <circle cx="320" cy="215" r="5" fill="#f97316"/>
+  <path d="M310 225 Q320 230 330 225 Q327 235 320 235 Q313 235 310 225" fill="#f97316"/>
+  <text x="320" y="250" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">Mobile</text>
+  
+  <!-- Mentor Nodes -->
+  <rect x="140" y="30" width="30" height="30" fill="rgba(255, 255, 255, 0.9)" rx="5" stroke="#10b981" stroke-width="2"/>
+  <circle cx="155" cy="40" r="4" fill="#10b981"/>
+  <path d="M148 48 Q155 52 162 48 Q160 55 155 55 Q150 55 148 48" fill="#10b981"/>
+  <text x="155" y="75" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">Mentor</text>
+  
+  <rect x="230" y="30" width="30" height="30" fill="rgba(255, 255, 255, 0.9)" rx="5" stroke="#10b981" stroke-width="2"/>
+  <circle cx="245" cy="40" r="4" fill="#10b981"/>
+  <path d="M238 48 Q245 52 252 48 Q250 55 245 55 Q240 55 238 48" fill="#10b981"/>
+  <text x="245" y="75" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">Expert</text>
+  
+  <!-- Connection Lines -->
+  <path d="M100 80 Q150 100 170 150" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M300 80 Q250 100 230 150" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M100 220 Q150 200 170 150" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M300 220 Q250 200 230 150" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Mentor Connections -->
+  <path d="M155 60 Q177 105 200 120" stroke="rgba(16, 185, 129, 0.6)" stroke-width="2" fill="none"/>
+  <path d="M245 60 Q223 105 200 120" stroke="rgba(16, 185, 129, 0.6)" stroke-width="2" fill="none"/>
+  
+  <!-- Skill Tags -->
+  <rect x="50" y="130" width="40" height="15" fill="rgba(34, 197, 94, 0.8)" rx="7"/>
+  <text x="70" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="8">React</text>
+  
+  <rect x="310" y="130" width="40" height="15" fill="rgba(59, 130, 246, 0.8)" rx="7"/>
+  <text x="330" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="8">Python</text>
+  
+  <rect x="50" y="180" width="40" height="15" fill="rgba(168, 85, 247, 0.8)" rx="7"/>
+  <text x="70" y="190" text-anchor="middle" fill="white" font-family="Arial" font-size="8">Figma</text>
+  
+  <rect x="310" y="180" width="40" height="15" fill="rgba(249, 115, 22, 0.8)" rx="7"/>
+  <text x="330" y="190" text-anchor="middle" fill="white" font-family="Arial" font-size="8">Swift</text>
+  
+  <!-- Central Label -->
+  <text x="200" y="190" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">TalentHub</text>
+  <text x="200" y="205" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial" font-size="10">Connecting Talents</text>
+  
+  <!-- Sparkle Effects -->
+  <g opacity="0.8">
+    <circle cx="120" cy="50" r="2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="60" r="2" fill="#06d6a0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="250" r="2" fill="#f72585">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="240" r="2" fill="#4cc9f0">
+      <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

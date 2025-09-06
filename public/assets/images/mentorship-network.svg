@@ -1,0 +1,141 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="network-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mentor-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="student-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#network-bg)" rx="12"/>
+  
+  <!-- Network Pattern -->
+  <g opacity="0.1">
+    <circle cx="50" cy="50" r="30" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="150" cy="80" r="25" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="250" cy="60" r="35" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="350" cy="90" r="20" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="80" cy="150" r="40" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="200" cy="180" r="30" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="320" cy="160" r="25" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="120" cy="240" r="35" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="280" cy="220" r="30" fill="none" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Main Mentorship Connection -->
+  <g>
+    <!-- Mentor (Left) -->
+    <circle cx="120" cy="150" r="35" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="3"/>
+    <circle cx="120" cy="140" r="12" fill="url(#mentor-grad)"/>
+    <path d="M105 160 Q120 170 135 160 Q130 185 120 185 Q110 185 105 160" fill="url(#mentor-grad)"/>
+    
+    <!-- Mentor Badge -->
+    <rect x="100" y="190" width="40" height="18" fill="#10b981" rx="9"/>
+    <text x="120" y="202" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">MENTOR</text>
+    
+    <!-- Student (Right) -->
+    <circle cx="280" cy="150" r="30" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="3"/>
+    <circle cx="280" cy="142" r="10" fill="url(#student-grad)"/>
+    <path d="M268 158 Q280 166 292 158 Q288 175 280 175 Q272 175 268 158" fill="url(#student-grad)"/>
+    
+    <!-- Student Badge -->
+    <rect x="260" y="185" width="40" height="18" fill="#3b82f6" rx="9"/>
+    <text x="280" y="197" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">STUDENT</text>
+    
+    <!-- Connection Line -->
+    <path d="M155 150 Q200 130 245 150" stroke="#22d3ee" stroke-width="4" fill="none" opacity="0.8">
+      <animate attributeName="stroke-dasharray" values="0 300;150 150;300 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Knowledge Transfer Icons -->
+    <g opacity="0.7">
+      <circle cx="180" cy="135" r="8" fill="#fbbf24">
+        <animate attributeName="cy" values="135;125;135" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="180" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="8">💡</text>
+      
+      <circle cx="200" cy="140" r="8" fill="#f472b6">
+        <animate attributeName="cy" values="140;130;140" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="200" y="145" text-anchor="middle" fill="white" font-family="Arial" font-size="8">📚</text>
+      
+      <circle cx="220" cy="135" r="8" fill="#a78bfa">
+        <animate attributeName="cy" values="135;125;135" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="220" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="8">🎯</text>
+    </g>
+  </g>
+  
+  <!-- Secondary Network Nodes -->
+  <!-- Top Students -->
+  <circle cx="80" cy="80" r="18" fill="rgba(59, 130, 246, 0.15)" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="80" cy="76" r="6" fill="#3b82f6"/>
+  <path d="M72 84 Q80 88 88 84 Q86 92 80 92 Q74 92 72 84" fill="#3b82f6"/>
+  
+  <circle cx="320" cy="80" r="18" fill="rgba(59, 130, 246, 0.15)" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="320" cy="76" r="6" fill="#3b82f6"/>
+  <path d="M312 84 Q320 88 328 84 Q326 92 320 92 Q314 92 312 84" fill="#3b82f6"/>
+  
+  <!-- Bottom Students -->
+  <circle cx="80" cy="220" r="18" fill="rgba(59, 130, 246, 0.15)" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="80" cy="216" r="6" fill="#3b82f6"/>
+  <path d="M72 224 Q80 228 88 224 Q86 232 80 232 Q74 232 72 224" fill="#3b82f6"/>
+  
+  <circle cx="320" cy="220" r="18" fill="rgba(59, 130, 246, 0.15)" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="320" cy="216" r="6" fill="#3b82f6"/>
+  <path d="M312 224 Q320 228 328 224 Q326 232 320 232 Q314 232 312 224" fill="#3b82f6"/>
+  
+  <!-- Additional Mentors -->
+  <rect x="35" y="35" width="25" height="25" fill="rgba(16, 185, 129, 0.15)" rx="4" stroke="#10b981" stroke-width="2"/>
+  <circle cx="47.5" cy="43" r="4" fill="#10b981"/>
+  <path d="M42 49 Q47.5 52 53 49 Q51.5 55 47.5 55 Q43.5 55 42 49" fill="#10b981"/>
+  
+  <rect x="340" y="35" width="25" height="25" fill="rgba(16, 185, 129, 0.15)" rx="4" stroke="#10b981" stroke-width="2"/>
+  <circle cx="352.5" cy="43" r="4" fill="#10b981"/>
+  <path d="M347 49 Q352.5 52 358 49 Q356.5 55 352.5 55 Q348.5 55 347 49" fill="#10b981"/>
+  
+  <!-- Connection Lines to Network -->
+  <path d="M98 80 Q109 115 120 120" stroke="rgba(34, 211, 238, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  <path d="M302 80 Q291 115 280 120" stroke="rgba(34, 211, 238, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  <path d="M98 220 Q109 185 120 180" stroke="rgba(34, 211, 238, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  <path d="M302 220 Q291 185 280 180" stroke="rgba(34, 211, 238, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  
+  <path d="M60 47.5 Q90 98.5 120 120" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  <path d="M340 47.5 Q310 98.5 280 120" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  
+  <!-- Skill Exchange Indicators -->
+  <g opacity="0.6">
+    <rect x="160" y="100" width="80" height="20" fill="rgba(59, 130, 246, 0.2)" rx="10" stroke="#3b82f6" stroke-width="1"/>
+    <text x="200" y="113" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="10" font-weight="bold">Knowledge Flow</text>
+    
+    <rect x="160" y="180" width="80" height="20" fill="rgba(16, 185, 129, 0.2)" rx="10" stroke="#10b981" stroke-width="1"/>
+    <text x="200" y="193" text-anchor="middle" fill="#10b981" font-family="Arial" font-size="10" font-weight="bold">Skill Growth</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Mentorship Network</text>
+  <text x="200" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial" font-size="12">Connecting Experience with Ambition</text>
+  
+  <!-- Animated Particles -->
+  <g opacity="0.5">
+    <circle cx="150" cy="120" r="2" fill="#22d3ee">
+      <animateMotion dur="4s" repeatCount="indefinite">
+        <path d="M0,0 Q50,-20 100,0 Q50,20 0,0"/>
+      </animateMotion>
+    </circle>
+    <circle cx="250" cy="180" r="2" fill="#fbbf24">
+      <animateMotion dur="3s" repeatCount="indefinite">
+        <path d="M0,0 Q-30,-15 -60,0 Q-30,15 0,0"/>
+      </animateMotion>
+    </circle>
+  </g>
+</svg>
